@@ -1,18 +1,13 @@
 {
   "extends": [
     "@rocketseat/eslint-config/node",
-    "plugin:vitest-globals/recommended"
+    "plugin:vitest-globals/recommended",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "no-useless-constructor": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-{"argsIgnorePattern": "^_",
-
-"varsIgnorePattern": "^_"
-
-}
-]
- },
+    "prettier/prettier": "error", "endOfLine": "lf" 
+  },
   "env": { "vitest-globals/env": true }
 }

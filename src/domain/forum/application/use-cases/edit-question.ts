@@ -1,5 +1,5 @@
 import { Question } from "../../entreprise/entities/question";
-import { QuestionsRepository } from "../repositories/question-repository";
+import { QuestionsRepository } from "../repositories/questions-repository";
 
 interface EditQuestionUseCaseRequest {
   authorId: string;

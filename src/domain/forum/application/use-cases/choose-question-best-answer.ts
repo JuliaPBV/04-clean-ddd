@@ -1,6 +1,6 @@
 import { AnswersRepository } from "../repositories/answers-repository";
 import { Question } from "../../entreprise/entities/question";
-import { QuestionsRepository } from "../repositories/question-repository";
+import { QuestionsRepository } from "../repositories/questions-repository";
 
 interface ChooseQuestionBestAnswerCaseRequest {
   authorId: string;

@@ -1,6 +1,6 @@
 import { UniqueEntityID } from "../unique-entity-id";
 
-export class Entity<Prosp> {
+export abstract class Entity<Prosp> {
   private _id: UniqueEntityID;
   protected props: Prosp;
 

@@ -66,8 +66,8 @@ describe("Edit question", () => {
     expect(
       inMemoryQuestionsRepository.items[0].attachments.currentItems,
     ).toEqual([
-      expect.objectContaining({ attachmmentId: new UniqueEntityID("1") }),
-      expect.objectContaining({ attachmmentId: new UniqueEntityID("3") }),
+      expect.objectContaining({ attachmentId: new UniqueEntityID("1") }),
+      expect.objectContaining({ attachmentId: new UniqueEntityID("3") }),
     ]);
   });
 

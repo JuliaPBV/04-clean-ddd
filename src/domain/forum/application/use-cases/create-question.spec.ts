@@ -34,9 +34,15 @@ describe("Create Question", () => {
     ).toHaveLength(2);
     expect(
       inMemoryQuestionsRepository.items[0].attachments.currentItems,
-    ).toEqual([
-      expect.objectContaining({ attachmmentId: new UniqueEntityID("1") }),
-      expect.objectContaining({ attachmmentId: new UniqueEntityID("2") }),
-    ]);
+    ).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          attachmentId: new UniqueEntityID("1"),
+        }),
+        expect.objectContaining({
+          attachmentId: new UniqueEntityID("2"),
+        }),
+      ]),
+    );
   });
 });

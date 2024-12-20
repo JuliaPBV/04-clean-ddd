@@ -33,10 +33,14 @@ describe("Create Answer", () => {
       inMemoryAnswersRepository.items[0].attachments.currentItems,
     ).toHaveLength(2);
     expect(inMemoryAnswersRepository.items[0].attachments.currentItems).toEqual(
-      [
-        expect.objectContaining({ attachmmentId: new UniqueEntityID("1") }),
-        expect.objectContaining({ attachmmentId: new UniqueEntityID("2") }),
-      ],
+      expect.arrayContaining([
+        expect.objectContaining({
+          attachmentId: new UniqueEntityID("1"),
+        }),
+        expect.objectContaining({
+          attachmentId: new UniqueEntityID("2"),
+        }),
+      ]),
     );
   });
 });
